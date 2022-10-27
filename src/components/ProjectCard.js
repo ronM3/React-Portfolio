@@ -1,39 +1,46 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 export const ProjectCard = ({ project }) => {
   return (
-    //     <Card className="bg-dark text-white" >
+    <Container>
+      <Row>
+        <Col xs={12} md={6} lg={4}>
+          <div className="project-text">
+            <div className="project-p">
+            <h3 className="project-title">{project.title}</h3>
+            <span>{project.description}</span>
+            <span className="project-loginInfo">
+              {project.user}
+            </span>
+            </div>
+            <a className="live_button" href={project.live}>
+            Visit Live
+            </a>
+            <a className="live_button s" href={project.repository}>
+              Source Code
+            </a>
+          </div>
+        </Col>
+        <Col xs={12} md={6} lg={10} xl={8}>
+          <div className="projectimg project_card">
+          <img className="project_img" src={project.image} />
+          </div>
+        </Col>
+      </Row>
+    </Container>
 
-    //     <div className="proj-imgbx">
-    //     <Card.Img className='project_img' src={project.image} alt="Card image" />
-    //     </div>
+    // best card
+    // <div className="project_card">
+    //   <div className="proj-imgbx">
+    //     <img className="project_img" src={project.image} />
     //     <div className="proj-txtx">
-    //     <h4>{project.title}</h4>
-    //     <span>{project.description}</span>
+    //       <h4>{project.title}</h4>
+    //       <span>{project.description}</span>
+    //       <button>Live</button>
+    //     </div>
     //   </div>
-
-    //   </Card>
-    <div className="project_card">
-      <div className="proj-imgbx">
-        <img className="project_img" src={project.image} />
-        <div className="proj-txtx">
-          <h4>{project.title}</h4>
-          <span>{project.description}</span>
-          <button>Live</button>
-        </div>
-      </div>
-    </div>
-
-    /* <Card className="bg-dark text-white" >
-<Card.Img className='project_img' src={project.image} alt="Card image" />
-<Card.ImgOverlay>
-  <Card.Title className='project_title'>{project.title}</Card.Title>
-  <Card.Text className='project_description'>
-    {project.description}
-  </Card.Text>
-</Card.ImgOverlay>
-</Card> */
+    // </div>
   );
 };
