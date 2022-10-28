@@ -489,6 +489,22 @@ a.live_button.s {
   letter-spacing: 0.8px;
   line-height: 1.2em;
 }
+.carousel-control-next, .carousel-control-prev{
+  bottom: auto !important;
+  opacity: .8 !important;
+  top: auto !important;
+  width: 65% !important;
+}
+span.carousel-control-prev-icon {
+  color: red !important;
+ 
+}
+.my__carousel_main div ol li {
+  background-color: red;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
 
 /* keyframes animations */
 @keyframes upAndDown {

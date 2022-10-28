@@ -7,7 +7,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import { AnimationBackground } from "./feature/AnimationBackground";
 
 export const Header = () => {
-  console.log("current URL 👉️", window.location.href);
+
   const [userEntered, setUserEntered] = useState(false);
 
   useEffect(() => {

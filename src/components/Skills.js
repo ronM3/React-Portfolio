@@ -33,7 +33,6 @@ export const Skills = () => {
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY >= 530) {
-        console.log(window.scrollY);
         setScrolled(true);
       } else {
         setScrolled(false);
