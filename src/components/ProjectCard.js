@@ -29,7 +29,7 @@ export const ProjectCard = ({ project }) => {
           </div>
         </Col>
         <Col xs={12} md={6} lg={10} xl={8}>
-          <Carousel activeIndex={index} onSelect={handleSelect} interval={null} variant="light">
+          <Carousel activeIndex={index} onSelect={handleSelect} interval={null} id='carouselP'>
             {project?.images.map((image, index) => {
               return (
                 <Carousel.Item key={index}>
