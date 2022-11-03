@@ -11,7 +11,6 @@ import "react-multi-carousel/lib/styles.css";
 import { projects } from "../data/projectsData";
 
 export const Projects = () => {
- 
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -34,27 +33,21 @@ export const Projects = () => {
 
   return (
     <section className="projects" id="projects">
-      <div className="twinkling"></div>
       <Container>
         <Row className="align-items-center justify-content-center">
           <h2>Projects</h2>
-          {/* <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra
-            et ultrices neque ornare aenean euismod elementum nisi. Ut tellus
-            elementum sagittis vitae et leo duis ut diam. Aenean pharetra magna
-            ac placerat vestibulum lectus. Turpis massa tincidunt dui ut ornare
-            lectus sit amet.
-          </p> */}
+          <p>
+            Over the time i built several projects using the latest technologies,
+            built responsive Single-Page-Apps (SPA) in React and also in Angular.
+            Also build backend applications in Node.js, Express 
+          </p>
           {projects.map((project, index) => {
             return (
-              <Col className="col-mt" sm={12} md={6} lg={8} xl={10} key={index}>
+              <Col className="mt-5 py-3" sm={12} md={6} lg={8} xl={10} key={index}>
                 <ProjectCard project={project} key={index} />
               </Col>
             );
           })}
-
-
         </Row>
       </Container>
     </section>

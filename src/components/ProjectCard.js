@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import { Container, Row, Col } from "react-bootstrap";
 import { projects } from "../data/projectsData";
 import Carousel from "react-bootstrap/Carousel";
+import Fade from "react-reveal/Fade";
 
 export const ProjectCard = ({ project }) => {
   const [index, setIndex] = useState(0);
@@ -12,8 +13,9 @@ export const ProjectCard = ({ project }) => {
   };
   return (
     <Container>
-      <Row>
+      <Row className="mt-1 py-3">
         <Col xs={12} md={6} lg={4}>
+          <Fade left duration={1000} delay={500} distance="30px">
           <div className="project-text">
             <div className="project-p">
               <h3 className="project-title">{project.title}</h3>
@@ -27,9 +29,17 @@ export const ProjectCard = ({ project }) => {
               Source Code
             </a>
           </div>
+          </Fade>
+       
         </Col>
-        <Col xs={12} md={6} lg={10} xl={8}>
-          <Carousel activeIndex={index} onSelect={handleSelect} interval={null} id='carouselP'>
+        <Col xs={12} md={6} lg={10} xl={8} className="carusel_item">
+        <Fade left duration={1000} delay={1000} distance="40px">
+          <Carousel
+            activeIndex={index}
+            onSelect={handleSelect}
+            interval={null}
+            id="carouselP"
+          >
             {project?.images.map((image, index) => {
               return (
                 <Carousel.Item key={index}>
@@ -39,9 +49,10 @@ export const ProjectCard = ({ project }) => {
                     className="d-block w-100"
                   />
                 </Carousel.Item>
-              )
+              );
             })}
           </Carousel>
+          </Fade>
         </Col>
       </Row>
     </Container>

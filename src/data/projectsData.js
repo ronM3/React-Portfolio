@@ -3,6 +3,7 @@ import freshmarket11 from "../assets/Freshmarket-shop11.gif";
 import freshmarket1 from "../assets/freshmarket1.png"
 import freshmarket2 from "../assets/freshmarket2.png"
 import freshmarket3 from "../assets/freshmarket3.png"
+import freshmarket4 from "../assets/freshmarket4.png"
 import vacation from "../assets/vacation-project.png";
 import vacation1 from "../assets/vacation-project1.png";
 import vacation2 from "../assets/vacation-project2.png";
@@ -17,7 +18,7 @@ export const projects = [
         description:
           "e commerce shop build with angular & rxjs, Backend: Node.js, Express, bcrypt, mysql. Frontend: Angular, RxJs, Reactive forms, CSS/Bootstrap, file upload feature",
         user: 'Demo User: got@gmail.com Password: 123456',
-        images: [`${freshmarket11}`, `${freshmarket2}`, `${freshmarket3}`],
+        images: [`${freshmarket11}`, `${freshmarket2}`, `${freshmarket3}`, `${freshmarket4}`],
         live: 'https://freshmarketapp.herokuapp.com/',
         repository: 'https://github.com/ronM3/Freshmarket-shop'
       },
@@ -33,7 +34,7 @@ export const projects = [
       {
         title: "Customizable Do List",
         description:
-          "A Friendly and customizable To-Do List where you can add, delete or edit tasks written with Vanilla JavaScript, HTML, CSS, Bootstrap Project is also mobile responsive and dark mode available also using external libraries.",
+          "A Friendly and customizable To-Do List where you can add, delete or edit tasks built with Vanilla JavaScript, HTML, CSS, Bootstrap Project is also mobile responsive and dark mode available also using external libraries.",
           images: [`${todolist}`, `${freshmarket1}`],
           live: 'https://customtodo.onrender.com/',
           repository: 'https://github.com/ronM3/Customizable-To-Do-List'

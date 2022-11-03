@@ -32,11 +32,11 @@ export const Header = () => {
             </div>
               <div className="connect-box">
                 <p id="fadeInP">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur voluptatum laborum numquam blanditiis harum
+                With knowledge and experience in writing SPA and using the latest WEB technologies by building web applications and responsive website.
+                Developing new features and improving existing ones always excites me.
                 </p>
                 <button onClick={() => console.log("connect")}>
+                  <a href="#contacts"/>
                 Let’s Connect <ArrowRightCircle size={25} />
               </button>
               </div>
