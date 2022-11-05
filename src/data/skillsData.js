@@ -17,7 +17,8 @@ import bootstrap_img from '../assets/img/bootstrap.svg'
 //     'NodeJS',
 //     'Express',
 //     'MySQL',
-//     'MongoDB'
+//     'MongoDB',
+            // Npm
 // ]
 
 export const skillsData = [

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Card from "react-bootstrap/Card";
 import { Container, Row, Col } from "react-bootstrap";
-import { projects } from "../data/projectsData";
 import Carousel from "react-bootstrap/Carousel";
 import Fade from "react-reveal/Fade";
 
@@ -16,57 +14,46 @@ export const ProjectCard = ({ project }) => {
       <Row className="mt-1 py-3">
         <Col xs={12} md={6} lg={4}>
           <Fade left duration={1000} delay={500} distance="30px">
-          <div className="project-text">
-            <div className="project-p">
-              <h3 className="project-title">{project.title}</h3>
-              <span>{project.description}</span>
-              <span className="project-loginInfo">{project.user}</span>
+            <div className="project-text">
+              <div className="project-p">
+                <h3 className="project-title">{project.title}</h3>
+                <span>{project.description}</span>
+                <span className="project-loginInfo">{project.user}</span>
+              </div>
+              <a className="live_button" href={project.live}>
+                Visit Live
+              </a>
+              {project.repository && (
+                <a className="live_button s" href={project.repository}>
+                  Source Code
+                </a>
+              )}
             </div>
-            <a className="live_button" href={project.live}>
-              Visit Live
-            </a>
-            <a className="live_button s" href={project.repository}>
-              Source Code
-            </a>
-          </div>
           </Fade>
-       
         </Col>
         <Col xs={12} md={6} lg={10} xl={8} className="carusel_item">
-        <Fade left duration={1000} delay={1000} distance="40px">
-          <Carousel
-            activeIndex={index}
-            onSelect={handleSelect}
-            interval={null}
-            id="carouselP"
-          >
-            {project?.images.map((image, index) => {
-              return (
-                <Carousel.Item key={index}>
-                  <img
-                    alt="First slide"
-                    src={image}
-                    className="d-block w-100"
-                  />
-                </Carousel.Item>
-              );
-            })}
-          </Carousel>
+          <Fade left duration={1000} delay={1000} distance="40px">
+            <Carousel
+              activeIndex={index}
+              onSelect={handleSelect}
+              interval={null}
+              id="carouselP"
+            >
+              {project?.images.map((image, index) => {
+                return (
+                  <Carousel.Item key={index}>
+                    <img
+                      alt="First slide"
+                      src={image}
+                      className="d-block w-100"
+                    />
+                  </Carousel.Item>
+                );
+              })}
+            </Carousel>
           </Fade>
         </Col>
       </Row>
     </Container>
-
-    // best card
-    // <div className="project_card">
-    //   <div className="proj-imgbx">
-    //     <img className="project_img" src={project.image} />
-    //     <div className="proj-txtx">
-    //       <h4>{project.title}</h4>
-    //       <span>{project.description}</span>
-    //       <button>Live</button>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };

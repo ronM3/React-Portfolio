@@ -1,6 +1,4 @@
-import freshmarket from "../assets/Freshmarket-shop.gif";
 import freshmarket11 from "../assets/Freshmarket-shop11.gif";
-import freshmarket1 from "../assets/freshmarket1.png"
 import freshmarket2 from "../assets/freshmarket2.png"
 import freshmarket3 from "../assets/freshmarket3.png"
 import freshmarket4 from "../assets/freshmarket4.png"
@@ -9,14 +7,16 @@ import vacation1 from "../assets/vacation-project1.png";
 import vacation2 from "../assets/vacation-project2.png";
 import vacation3 from "../assets/vacation-project3.png";
 import todo from "../assets/todo-list.gif";
-import todolist from "../assets/todolist.png";
-
+import todolist2 from "../assets/todolist2.png";
+import todolist3 from "../assets/todolist3.png";
+import csv_parser from '../assets/csv-parser3.gif'
+import csv_parser2  from '../assets/csv-parser2.gif'
 
 export const projects = [
     {
         title: "Freshmarket shop",
         description:
-          "e commerce shop build with angular & rxjs, Backend: Node.js, Express, bcrypt, mysql. Frontend: Angular, RxJs, Reactive forms, CSS/Bootstrap, file upload feature",
+          "e commerce shop build with angular & rxjs, Backend: Node.js, Express, bcrypt, mysql. Frontend: Angular, RxJs, Reactive forms, CSS/Bootstrap, file upload feature and error handler.",
         user: 'Demo User: got@gmail.com Password: 123456',
         images: [`${freshmarket11}`, `${freshmarket2}`, `${freshmarket3}`, `${freshmarket4}`],
         live: 'https://freshmarketapp.herokuapp.com/',
@@ -35,14 +35,14 @@ export const projects = [
         title: "Customizable Do List",
         description:
           "A Friendly and customizable To-Do List where you can add, delete or edit tasks built with Vanilla JavaScript, HTML, CSS, Bootstrap Project is also mobile responsive and dark mode available also using external libraries.",
-          images: [`${todolist}`, `${freshmarket1}`],
+          images: [`${todo}`, `${todolist2}`, `${todolist3}`],
           live: 'https://customtodo.onrender.com/',
           repository: 'https://github.com/ronM3/Customizable-To-Do-List'
       },
       {
-        title: "Freshmarket shop",
+        title: "Node.js - CSV Parser",
         description:
-          "e commerce shop build with angular & rxjs, Backend: Node.js, Express, bcrypt, mysql. Frontend: Angular, RxJs, Reactive forms, CSS/Bootstrap, file upload feature",
-          images: [`${freshmarket}`, `${freshmarket1}`],
+          "API endpoint that parses and processes CSV files line by line as array of arrays, API endpoint that requires data from a given api using specific id and return a CSV file with the data. Project built with Node.js, express also added persistent caching for API and custom error handler.",
+          images: [`${csv_parser2}`,`${csv_parser}`],
       },
 ]

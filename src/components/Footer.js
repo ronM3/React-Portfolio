@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import logo3 from "../assets/logo10.svg";
 import footer_img1 from "../assets/footer-img1.png";
 
 export const Footer = () => {
@@ -88,7 +87,7 @@ export const Footer = () => {
           </Col>
           <Col className="social mt-3">
             <p className="footer_p">Social Media</p>
-            <a className="footer_link" href="#">
+            <a className="footer_link" href="https://www.facebook.com/ron.motola.1">
               <i className="fab fa-facebook-f">
                 <span style={{ marginLeft: "10px" }}>Facebook</span>
               </i>
@@ -98,9 +97,14 @@ export const Footer = () => {
                 <span style={{ marginLeft: "10px" }}>Instagram</span>
               </i>
             </a>
-            <a className="footer_link" href="#">
+            <a className="footer_link" href="https://www.linkedin.com/in/ron-motola">
               <i className="fa-brands fa-linkedin">
                 <span style={{ marginLeft: "10px" }}>Linkedin</span>
+              </i>
+            </a>
+            <a className="footer_link" href="https://github.com/ronM3">
+              <i className="fa-brands fa-github">
+                <span style={{ marginLeft: "10px" }}>Github</span>
               </i>
             </a>
           </Col>
@@ -108,7 +112,7 @@ export const Footer = () => {
           <Col
             className="mt-3"
             md={{ span: 2, offset: 2 }}
-            xs={{ span: 2, offset: 2 }}
+            xs={{ span: 4, offset: 2 }}
           >
             <p className="footer_p">Services</p>
             <div className="footer_services">
