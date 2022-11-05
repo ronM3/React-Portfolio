@@ -333,6 +333,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     rgb(57 41 81) 13.09%,
     rgb(0 0 0 / 50%) 58.58%
   );
+  border-bottom-right-radius: 64px;
   z-index: 0;
   /* background: linear-gradient(90.21deg, rgb(163 9 102 / 50%) -5.91%, rgb(34 20 90 / 50%) 111.58%); */
 }
