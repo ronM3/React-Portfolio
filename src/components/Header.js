@@ -28,7 +28,7 @@ export const Header = () => {
               <h1 className="animated-text">Hi!</h1>
               <h1 className="animated-text first">I'm Ron Motola</h1>
               <h1 className="animated-text second">
-                {"Full-Stack Web Developer"}
+                {"Full Stack Web Developer"}
               </h1>
             </div>
             <div className="connect-box">

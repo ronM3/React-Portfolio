@@ -66,7 +66,7 @@ export const Skills = () => {
                   className="skills-slider"
                 >
                   {skillsData.map((skill) => {
-                    return <SkillCard skill={skill} key={skill.name} />;
+                    return <SkillCard skill={skill} key={skill.name} alt="alt" />;
                   })}
                 </Carousel>
               </div>
