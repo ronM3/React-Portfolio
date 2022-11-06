@@ -20,14 +20,13 @@ export const ProjectCard = ({ project }) => {
                 <span>{project.description}</span>
                 <span className="project-loginInfo">{project.user}</span>
               </div>
-              <a className="live_button" href={project.live}>
+              {project.live &&  <a className="live_button" href={project.live}>
                 Visit Live
-              </a>
-              {project.repository && (
+              </a>}
                 <a className="live_button s" href={project.repository}>
                   Source Code
                 </a>
-              )}
+         
             </div>
           </Fade>
         </Col>
