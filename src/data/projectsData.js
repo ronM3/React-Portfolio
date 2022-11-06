@@ -34,7 +34,7 @@ export const projects = [
       {
         title: "Customizable Do List",
         description:
-          "A Friendly and customizable To-Do List where you can add, delete or edit tasks built with Vanilla JavaScript, HTML, CSS, Bootstrap Project is also mobile responsive and dark mode available also using external libraries.",
+          "A Friendly and customizable To-Do List where you can add, delete or edit tasks built with Vanilla JavaScript, HTML, CSS, Bootstrap. Project is also mobile responsive and dark mode available also using external libraries.",
           images: [`${todo}`, `${todolist2}`, `${todolist3}`],
           live: 'https://customtodo.onrender.com/',
           repository: 'https://github.com/ronM3/Customizable-To-Do-List'
