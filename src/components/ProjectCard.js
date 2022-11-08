@@ -26,7 +26,6 @@ export const ProjectCard = ({ project }) => {
                 <a className="live_button s" href={project.repository}>
                   Source Code
                 </a>
-         
             </div>
           </Fade>
         </Col>

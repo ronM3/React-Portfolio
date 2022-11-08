@@ -4,22 +4,10 @@ import javascript_img from '../assets/img/javascript.svg'
 import typescript_img from '../assets/img/typescript.svg'
 import react_img from '../assets/img/react.svg'
 import bootstrap_img from '../assets/img/bootstrap.svg'
-
-//  export const skillsData = [
-//     'HTML',
-//     'CSS',
-//     'Javascript',
-//     'Typescript',
-//     'React',
-//     'Angular',
-//     'Bootstrap',
-//     'JQuery',
-//     'NodeJS',
-//     'Express',
-//     'MySQL',
-//     'MongoDB',
-            // Npm
-// ]
+import nodejs from '../assets/img/nodejs.svg'
+import npm from '../assets/img/npm.svg'
+import angular from '../assets/img/angular.svg'
+import mysql from '../assets/img/mysql.svg'
 
 export const skillsData = [
     {
@@ -45,5 +33,21 @@ export const skillsData = [
     {
         img: bootstrap_img,
         name: 'Bootstrap'
+    },
+    {
+        img: nodejs,
+        name: 'nodejs'
+    },
+    {
+        img: npm,
+        name: 'Npm'
+    },
+    {
+        img: angular,
+        name: 'Angular'
+    },
+    {
+        img: mysql,
+        name: 'MySQL'
     }
 ]

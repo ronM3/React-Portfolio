@@ -1,12 +1,12 @@
-import { Nav, Container, Navbar } from "react-bootstrap";
+import React from "react";
 import { useState, useEffect } from "react";
-// import { logo } from '../assets/logo.svg'
+import "../styles/navbar.css";
 import logo3 from "../assets/logo10.svg";
-import logo2 from "../assets/logo10.svg";
 
-export const NavBar = () => {
+export const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -23,71 +23,73 @@ export const NavBar = () => {
 
   const onUpdateActiveL = (value) => {
     setActiveLink(value);
+    setIsNavExpanded(false);
   };
+
   return (
-    <Navbar expand="md" collapseOnSelect className={scrolled ? "scrolled" : ""}>
-      <Container>
-        <Navbar.Brand href="#home">
+    <nav className={scrolled ? "scrolled" : ""}>
+      <div className="container">
+        <a href="#home" className="brand-name">
           <img className="logo" src={logo3} alt="logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        </a>
+        <button
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+          aria-expanded={isNavExpanded}
+        >
           <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <div className="scroll-to-element">
-              <Nav.Link
-                href="#home"
-                className={
-                  activeLink === "home"
-                    ? "active navbar-link"
-                    : "navbar-link nav-link-ltr"
-                }
-                onClick={() => onUpdateActiveL("home")}
-              >
-                Home
-              </Nav.Link>
-            </div>
-            <div className="scroll-to-element">
-              <Nav.Link
-                href="#skills"
-                className={
-                  activeLink === "Skills" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveL("Skills")}
-              >
-                Skills
-              </Nav.Link>
-            </div>
-            <div className="scroll-to-element">
-              <Nav.Link
-                href="#projects"
-                className={
-                  activeLink === "Projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveL("Projects")}
-              >
-                Projects
-              </Nav.Link>
-            </div>
-            <div className="scroll-to-element">
-              <Nav.Link
-                href="#contacts"
-                className={
-                  activeLink === "Contact"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveL("Contact")}
-              >
-                Contact
-              </Nav.Link>
-            </div>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </button>
+        <ul className={isNavExpanded ? "nav-links open" : "nav-links"}>
+          <li className={isNavExpanded ? "fadelinks" : ""}>
+            <a
+              href="#home"
+              className={
+                activeLink === "home"
+                  ? "active navbar-link"
+                  : "navbar-link nav-link-ltr"
+              }
+              onClick={() => onUpdateActiveL("home")}
+            >
+              Home
+            </a>
+          </li>
+          <li className={isNavExpanded ? "fadelinks" : ""}>
+            <a
+              href="#skills"
+              className={
+                activeLink === "Skills" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveL("Skills")}
+            >
+              Skills
+            </a>
+          </li>
+          <li className={isNavExpanded ? "fadelinks" : ""}>
+            <a
+              href="#projects"
+              className={
+                activeLink === "Projects" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveL("Projects")}
+            >
+              Projects
+            </a>
+          </li>
+          <li className={isNavExpanded ? "fadelinks" : ""}>
+            <a
+              href="#contacts"
+              className={
+                activeLink === "Contact" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveL("Contact")}
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
