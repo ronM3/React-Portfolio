@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "../styles/navbar.css";
 import logo3 from "../assets/logo10.svg";
 
-export const Navbar = () => {
+export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [isNavExpanded, setIsNavExpanded] = useState(false);

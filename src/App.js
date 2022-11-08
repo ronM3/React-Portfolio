@@ -4,12 +4,12 @@ import { Header } from "./components/Header";
 import { Projects } from "./components/Projects";
 import { ScrollTopButton } from "./components/ScrollTopButton";
 import { Skills } from "./components/Skills";
-import { Navbar } from './components/Navbar';
+import { NavBar } from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <NavBar/>
       <ScrollTopButton />
       <Header />
       <Skills />
