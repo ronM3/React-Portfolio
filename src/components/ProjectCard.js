@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import Fade from "react-reveal/Fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const ProjectCard = ({ project }) => {
   const [index, setIndex] = useState(0);
@@ -40,7 +41,7 @@ export const ProjectCard = ({ project }) => {
               {project?.images.map((image, index) => {
                 return (
                   <Carousel.Item key={index}>
-                    <img
+                    <LazyLoadImage 
                       alt="First slide"
                       src={image}
                       className="d-block w-100"

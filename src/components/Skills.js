@@ -58,7 +58,7 @@ export const Skills = () => {
 
                 <Carousel
                   responsive={responsive}
-                  autoPlay={false}
+                  autoPlay={true}
                   autoPlaySpeed={300}
                   transitionDuration={1000}
                   infinite={true}
