@@ -8,7 +8,7 @@ export const SkillCard = ({ skill }) => {
         className="skill_img"
         src={skill.img}
         alt="skill"
-        style={{ width: "40%" }}
+        width= "40%"
       />
       <h3 className="skill_name">{skill.name}</h3>
     </div>
