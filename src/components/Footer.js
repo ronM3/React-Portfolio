@@ -26,7 +26,7 @@ export const Footer = () => {
                       Name
                     </label>
                     <input
-                      placeholder="John Doe"
+                      placeholder="John"
                       type="text"
                       name="Name"
                       className="form-input input_box"

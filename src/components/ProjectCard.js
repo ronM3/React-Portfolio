@@ -37,6 +37,7 @@ export const ProjectCard = ({ project }) => {
               onSelect={handleSelect}
               interval={null}
               id="carouselP"
+              fade
             >
               {project?.images.map((image, index) => {
                 return (
@@ -44,6 +45,7 @@ export const ProjectCard = ({ project }) => {
                     <LazyLoadImage 
                       alt="First slide"
                       src={image}
+                      height="auto"
                       className="d-block w-100"
                     />
                   </Carousel.Item>
