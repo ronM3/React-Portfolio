@@ -1,16 +1,17 @@
-import freshmarket11 from "../assets/Freshmarket-shop11.gif";
+import freshmarket11 from "../assets/Freshmarket-shop11.webm";
 import freshmarket2 from "../assets/freshmarket2.png"
 import freshmarket3 from "../assets/freshmarket3.png"
 import freshmarket4 from "../assets/freshmarket4.png"
 import vacation from "../assets/vacation-project.png";
-import vacation1 from "../assets/vacation-project1.png";
-import vacation2 from "../assets/vacation-project2.png";
-import vacation3 from "../assets/vacation-project3.png";
-import todo from "../assets/todo-list.gif";
-import todolist2 from "../assets/todolist2.png";
-import todolist3 from "../assets/todolist3.png";
-import csv_parser from '../assets/csv-parser3.gif'
-import csv_parser2  from '../assets/csv-parser2.gif'
+import vacation1 from "../assets/vacation-project1.webp";
+import vacation2 from "../assets/vacation-project2.webp";
+import vacation3 from "../assets/vacation-project3.webp";
+import todo from "../assets/todo-list.webm";
+import todolist2 from "../assets/todolist2.webp";
+import todolist3 from "../assets/todolist3.webp";
+import csv_parser from '../assets/csv-parser3.webm'
+import csv_parser2  from '../assets/csv-parser2.webm'
+
 
 export const projects = [
     {

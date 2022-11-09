@@ -7,6 +7,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 export const ProjectCard = ({ project }) => {
   const [index, setIndex] = useState(0);
 
+  const isVideo = ['.webm', '.mp4']
+  
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -21,12 +23,14 @@ export const ProjectCard = ({ project }) => {
                 <span>{project.description}</span>
                 <span className="project-loginInfo">{project.user}</span>
               </div>
-              {project.live &&  <a className="live_button" href={project.live}>
-                Visit Live
-              </a>}
-                <a className="live_button s" href={project.repository}>
-                  Source Code
+              {project.live && (
+                <a className="live_button" href={project.live}>
+                  Visit Live
                 </a>
+              )}
+              <a className="live_button s" href={project.repository}>
+                Source Code
+              </a>
             </div>
           </Fade>
         </Col>
@@ -42,12 +46,18 @@ export const ProjectCard = ({ project }) => {
               {project?.images.map((image, index) => {
                 return (
                   <Carousel.Item key={index}>
-                    <img
-                      alt="First slide"
-                      src={image}
-                      height="auto"
-                      className="d-block w-100"
-                    />
+                    {image.includes('webm') ? (
+                      <video  width="100%" autoPlay={true} muted={true} loop={true}>
+                        <source src={image} type="video/webm" />
+                      </video>
+                    ) : (
+                      <img
+                        alt="First slide"
+                        src={image}
+                        height="auto"
+                        className="d-block w-100"
+                      />
+                    )}
                   </Carousel.Item>
                 );
               })}
