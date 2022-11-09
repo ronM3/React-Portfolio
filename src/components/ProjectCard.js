@@ -42,7 +42,7 @@ export const ProjectCard = ({ project }) => {
               {project?.images.map((image, index) => {
                 return (
                   <Carousel.Item key={index}>
-                    <LazyLoadImage 
+                    <img
                       alt="First slide"
                       src={image}
                       height="auto"
