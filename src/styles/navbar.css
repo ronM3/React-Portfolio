@@ -20,6 +20,7 @@ nav > .container {
   flex-wrap: inherit;
   justify-content: space-between;
   height: 100%;
+  padding: 0px;
 }
 .brand-name {
   width: 12%;
@@ -90,7 +91,6 @@ nav [aria-expanded="true"] .navbar-toggler-icon {
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
-  margin-top: 13px;
 }
 
 .nav-links li a {
