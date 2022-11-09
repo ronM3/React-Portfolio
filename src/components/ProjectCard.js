@@ -41,7 +41,7 @@ export const ProjectCard = ({ project }) => {
             >
               {project?.images.map((image, index) => {
                 return (
-                  <Carousel.Item key={project.id}>
+                  <Carousel.Item key={index}>
                     <LazyLoadImage 
                       alt="First slide"
                       src={image}

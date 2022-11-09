@@ -17,7 +17,7 @@ export const Projects = () => {
           {projects.map((project, index) => {
             return (
               <Col className="mt-5 py-3" sm={12} md={6} lg={8} xl={10} key={index}>
-                <ProjectCard project={project} key={index} />
+                <ProjectCard project={project} key={project.id} />
               </Col>
             );
           })}
