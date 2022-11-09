@@ -39,8 +39,10 @@ export const Header = () => {
               </p>
               <div className="bt_container">
                 <button onClick={() => console.log("connect")}>
-                  <a href="#contacts" />
+                  <a href="#contacts">
                   Let’s Connect <ArrowRightCircle size={25} />
+                  </a>
+            
                 </button>
               </div>
             </div>

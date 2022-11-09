@@ -118,6 +118,10 @@ body {
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
+.banner button a {
+  text-decoration: none;
+  color: #fff;
+}
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;

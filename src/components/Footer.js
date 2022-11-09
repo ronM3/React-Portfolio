@@ -128,14 +128,6 @@ export const Footer = () => {
             </div>
           </Col>
         </Row>
-
-        {/* <Col>
-            <p className="footer_p">Contact Us</p>
-            <a className="footer_link" href="#">Uttar Pradesh</a>
-            <a  className="footer_link" href="#">Ahemdabad</a>
-            <a  className="footer_link" href="#">Indore</a>
-            <a  className="footer_link" href="#">Mumbai</a>
-          </Col> */}
         <img src={footer_img1} alt="contacts" className="contacts--img" />
         <p className="footer-copyright">
           Copyright 2022. All Rights Reserved &copy; Ron Motola

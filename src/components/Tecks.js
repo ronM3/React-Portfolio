@@ -10,13 +10,13 @@ export const Tecks = () => {
         <h2>Skills</h2>
         <Col xs={6} md={6} xl={3}>
           <div className="skill_type">
-            <img className="skills_images" src={frontend} />
+            <img className="skills_images" src={frontend} alt="frontend" />
             <h3 className="skill_header">Front End</h3>
           </div>
         </Col>
         <Col xs={6} md={6} xl={3}>
           <div className="skill_type">
-            <img className="skills_images" src={backend} />
+            <img className="skills_images" src={backend} alt="backend" />
             <h3 className="skill_header">Back End</h3>
           </div>
         </Col>
