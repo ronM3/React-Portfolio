@@ -15,10 +15,11 @@ nav.scrolled {
   border-bottom: 1px solid #804da7;
 }
 nav > .container {
-  align-items: baseline;
+  align-items: center;
   display: flex;
   flex-wrap: inherit;
   justify-content: space-between;
+  height: 100%;
 }
 .brand-name {
   width: 12%;
@@ -138,9 +139,15 @@ nav [aria-expanded="true"] .navbar-toggler-icon {
   nav.scrolled {
     height: 54px;
   }
+  nav > .container {
+    align-items: initial;
+  }
 
   .brand-name {
     width: 24%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
   .hamburger {
     position: absolute;

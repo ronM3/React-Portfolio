@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import footer_img1 from "../assets/footer-img1.png";
+import footer_img1 from "../assets/footer-img1.webp";
 
 export const Footer = () => {
   const [success, setSuccess] = useState(false);

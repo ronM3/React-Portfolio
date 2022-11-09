@@ -33,7 +33,7 @@ body {
   margin-top: 0;
   height: 100vh;
   padding: 260px 0 100px 0;
-  background: url(./assets/banner-bg20.png) repeat top center;
+  background: url(./assets/banner-bg20.webp) repeat top center;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -631,7 +631,7 @@ a.live_button.s {
   .banner {
     height: 104vh;
     padding: 78px 0 100px 0;
-    background: url(./assets/banner-bg10.png) repeat top center;
+    background: url(./assets/banner-bg10.webp) repeat top center;
   }
   .banner button{
     margin-top: 26px;
