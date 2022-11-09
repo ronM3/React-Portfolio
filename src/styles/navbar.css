@@ -2,7 +2,6 @@ nav {
   height: 14vh;
   width: 100%;
   display: flex;
-  /* padding: 18px 0; */
   position: fixed;
   top: 0;
   transition: 0.32s ease-in-out;
@@ -159,9 +158,9 @@ nav [aria-expanded="true"] .navbar-toggler-icon {
     flex-direction: column;
     clip-path: circle(100px at 90% -10%);
     -webkit-clip-path: circle(100px at 90% -10%);
-    transition: all 1s ease-out;
+    transition: all 0.8s ease-out;
     pointer-events: none;
-    padding: 20px;
+    padding: 50px;
   }
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
@@ -186,6 +185,9 @@ nav [aria-expanded="true"] .navbar-toggler-icon {
   }
   .nav-links li:nth-child(3) {
     transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
   }
   li.fadelinks {
     opacity: 1;

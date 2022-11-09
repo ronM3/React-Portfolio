@@ -190,6 +190,9 @@ body {
 }
 .skill_name {
   text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  
 }
 
 .skill_item:hover {
@@ -258,19 +261,6 @@ body {
   text-align: center;
   width: 56%;
 }
-/* .project_card {
-  border-radius: 8px;
-  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  -webkit-transition: all 0.65s ease;
-  transition: all 0.65s ease;
-} */
-.project_card:hover {
-  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-}
-
 .project-p {
   display: grid;
 }
@@ -662,6 +652,16 @@ a.live_button.s {
   }
   .skill_img{
     width: 100% !important;
+  }
+  .skill_name {
+    text-align: center;
+    font-size: 22px;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 104px;
+    left: 15px;
   }
   .carousel-indicators {
     max-width: 35% !important;
