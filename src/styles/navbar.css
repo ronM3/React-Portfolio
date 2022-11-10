@@ -13,6 +13,7 @@ nav.scrolled {
   padding: 0;
   background-color: #241d30;
   border-bottom: 1px solid #804da7;
+  opacity: 0.9;
 }
 nav > .container {
   align-items: center;
@@ -91,6 +92,7 @@ nav [aria-expanded="true"] .navbar-toggler-icon {
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
+  padding: 10px 12px 0px;
 }
 
 .nav-links li a {

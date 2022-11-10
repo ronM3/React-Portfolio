@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/Rocket-Black5.png";
+import headerImg from "../assets/Rocket-Black5.webp";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { AnimationBackground } from "./feature/AnimationBackground";
 
