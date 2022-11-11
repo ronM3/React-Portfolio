@@ -6,9 +6,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const ProjectCard = ({ project }) => {
   const [index, setIndex] = useState(0);
-
-  const isVideo = ['.webm', '.mp4']
-  
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
