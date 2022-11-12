@@ -45,6 +45,7 @@ const Contacts = () => {
           setName("");
           setEmail("");
           setMessage("");
+          console.log(form.current);
           setTimeout(() => {
             form.current.reset();
             setSuccess(false);
