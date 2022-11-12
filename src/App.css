@@ -566,20 +566,7 @@ a.live_button.s {
   font-size: 0.875rem;
   color: rgb(241 192 255);
 }
-@keyframes fly {
-  10% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: translateX(-10px);
-  }
-  70% {
-    transform: translateX(60px);
-  }
-  100% {
-    transform: translateX(80px);
-  }
-}
+
 .form-message {
   height: 111px;
   box-sizing: border-box;
@@ -650,6 +637,20 @@ a.live_button.s {
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+@keyframes fly {
+  10% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  70% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(80px);
   }
 }
 /* media queries */
@@ -744,7 +745,7 @@ a.live_button.s {
     width: 92%;
   }
   .error_msg {
-    position: relative;
+    position: inherit;
   }
   span.error_msg.message {
     position: absolute;
