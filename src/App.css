@@ -196,7 +196,6 @@ body {
   text-align: center;
   font-size: 20px;
   justify-content: center;
-  
 }
 
 .skill_item:hover {
@@ -440,6 +439,7 @@ a.live_button.s {
 }
 .input-container {
   width: 100%;
+  position: relative;
 }
 .footer_h {
   letter-spacing: 4px;
@@ -554,6 +554,32 @@ a.live_button.s {
   font-size: 28px;
   transition: all 0.3s 0.8s ease-in-out;
 }
+.error_msg {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-bottom: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-height: 20px;
+  backdrop-filter: blur(31px) !important;
+  font-size: 0.875rem;
+  color: rgb(241 192 255);
+}
+@keyframes fly {
+  10% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  70% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(80px);
+  }
+}
 .form-message {
   height: 111px;
   box-sizing: border-box;
@@ -637,7 +663,7 @@ a.live_button.s {
     padding: 78px 0 100px 0;
     background: url(./assets/banner-bg10.webp) repeat top center;
   }
-  .banner button{
+  .banner button {
     margin-top: 26px;
   }
   .main-text {
@@ -654,7 +680,7 @@ a.live_button.s {
   .project-text {
     padding: 10px;
   }
-  .skill_img{
+  .skill_img {
     width: 100% !important;
   }
   .skill_name {
@@ -716,6 +742,13 @@ a.live_button.s {
   }
   .projects p {
     width: 92%;
+  }
+  .error_msg {
+    position: relative;
+  }
+  span.error_msg.message {
+    position: absolute;
+    margin-bottom: 6px;
   }
 }
 

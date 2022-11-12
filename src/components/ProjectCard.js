@@ -48,7 +48,7 @@ export const ProjectCard = ({ project }) => {
                         <source src={image} type="video/webm" />
                       </video>
                     ) : (
-                      <img
+                      <LazyLoadImage
                         alt="First slide"
                         src={image}
                         height="auto"
