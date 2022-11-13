@@ -1,24 +1,19 @@
 import React from "react";
-import Particles from 'react-tsparticles'
+import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 export const AnimationBackground = ({}) => {
   const options = {
     autoPlay: true,
-    // background: {
-    //   image:
-    //     "linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%)",
-    // },
     fullScreen: {
       enable: true,
-    
     },
-    style:{
-            width: '100%',
-            height: '100%',
-            position: 'absolute',
-            top: '0',
-            left: '0',
+    style: {
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      top: "0",
+      left: "0",
     },
     fpsLimit: 120,
     interactivity: {
@@ -56,7 +51,7 @@ export const AnimationBackground = ({}) => {
         speed: 1,
         straight: false,
       },
-      number: { density: { enable: true, value_area: 800 }, value: 40},
+      number: { density: { enable: true, value_area: 800 }, value: 40 },
       opacity: {
         anim: { enable: false, opacity_min: 0.1, speed: 1, sync: false },
         random: false,

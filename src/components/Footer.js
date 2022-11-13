@@ -1,47 +1,70 @@
-import { useState, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import footer_img1 from "../assets/footer-img1.webp";
-import emailjs from "@emailjs/browser";
-import isEmail from "validator/lib/isEmail";
 import Contacts from "./Contacts";
+import CheckMobileScreen from "./feature/checkMobileScreen";
 
 export const Footer = () => {
- 
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const width = CheckMobileScreen();
+
+  useEffect(() => {
+    if (width) {
+      setIsMobile(true);
+      setIsDesktop(false);
+      console.log(isMobile);
+    } else {
+      setIsMobile(false);
+      setIsDesktop(true);
+    }
+  }, [width]);
   return (
     <footer className="footer" id="contacts">
       <Container>
         <Row>
-      <Contacts/>
-          <Col className="social mt-3">
+          <Contacts />
+          <Col className={isMobile ? "socialmedia-icons" : "social mt-3"}>
             <p className="footer_p">Social Media</p>
             <a
-              className="footer_link"
+              className={isMobile ? "socialIcon" : "footer_link"}
               href="https://www.linkedin.com/in/ron-motola"
             >
               <i className="fa-brands fa-linkedin">
-                <span style={{ marginLeft: "10px" }}>Linkedin</span>
-              </i>
-            </a>
-            <a className="footer_link" href="https://github.com/ronM3">
-              <i className="fa-brands fa-github">
-                <span style={{ marginLeft: "10px" }}>Github</span>
+                {!isMobile && (
+                  <span style={{ marginLeft: "10px" }}>Linkedin</span>
+                )}
               </i>
             </a>
             <a
-              className="footer_link"
+              className={isMobile ? "socialIcon" : "footer_link"}
+              href="https://github.com/ronM3"
+            >
+              <i className="fa-brands fa-github">
+                {!isMobile && (
+                  <span style={{ marginLeft: "10px" }}>Github</span>
+                )}
+              </i>
+            </a>
+            <a
+              className={isMobile ? "socialIcon" : "footer_link"}
               href="https://www.facebook.com/ron.motola.1"
             >
               <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>Facebook</span>
+                {!isMobile && (
+                  <span style={{ marginLeft: "10px" }}>Facebook</span>
+                )}
               </i>
             </a>
-            <a className="footer_link" href="mailto:ron00003@gmail.com">
+            <a
+              className={isMobile ? "socialIcon" : "footer_link"}
+              href="mailto:ron00003@gmail.com"
+            >
               <i className="fa fa-envelope">
-                <span style={{ marginLeft: "10px" }}>Email</span>
+                {!isMobile && <span style={{ marginLeft: "10px" }}>Email</span>}
               </i>
             </a>
           </Col>
-
           <Col
             className="mt-3"
             md={{ span: 2, offset: 2 }}
@@ -53,7 +76,7 @@ export const Footer = () => {
                 All Projects
               </a>
               <a className="footer_link" href="#">
-                Internships
+                Collaboration
               </a>
               <a className="footer_link">Coding</a>
             </div>

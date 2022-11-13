@@ -341,7 +341,6 @@ a.live_button.s {
 }
 .footer {
   padding: 1.8rem 0;
-  /* background: url("./assets/footer-bg.png"); */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -351,10 +350,6 @@ a.live_button.s {
     rgb(45 33 63) 38.09%,
     rgb(0 0 0 / 50%) 69.58%
   );
-  /* background-color: #1b1b1b; */
-  /* background: linear-gradient(173.21deg, #7e4ba5 -57.91%, #1b1b1b 40.58%) */
-  /* -webkit-clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
-  clip-path: polygon(0 0,100% 0,100% 80%,0 100%); */
 }
 .contacts--img {
   position: absolute;
@@ -596,6 +591,32 @@ a.live_button.s {
     rgb(37 20 32) 57.58%
   );
 }
+.socialmedia-icons {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 27px;
+  padding: 0.4rem;
+}
+.socialIcon{
+  color: #212121;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  font-size: 21px;
+  transition: 250ms ease-in-out;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.socialIcon:hover{
+  transform: scale(1.1);
+  color: #9450ff;
+  transition: 200ms ease-in;
+}
 /* keyframes animations */
 @keyframes rotate {
   0% {
@@ -739,7 +760,7 @@ a.live_button.s {
   .contacts--img {
     width: 199px;
     opacity: 0.6;
-    left: 83px;
+    left: 113px;
   }
   .projects p {
     width: 92%;
