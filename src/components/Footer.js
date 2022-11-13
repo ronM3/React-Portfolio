@@ -1,22 +1,19 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import "../styles/footer.css";
 import footer_img1 from "../assets/footer-img1.webp";
 import Contacts from "./Contacts";
 import CheckMobileScreen from "./feature/checkMobileScreen";
 
 export const Footer = () => {
-  const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const width = CheckMobileScreen();
 
   useEffect(() => {
     if (width) {
       setIsMobile(true);
-      setIsDesktop(false);
-      console.log(isMobile);
     } else {
       setIsMobile(false);
-      setIsDesktop(true);
     }
   }, [width]);
   return (
@@ -25,7 +22,7 @@ export const Footer = () => {
         <Row>
           <Contacts />
           <Col className={isMobile ? "socialmedia-icons" : "social mt-3"}>
-            <p className="footer_p">Social Media</p>
+            <p className="footer_p social">Social Media</p>
             <a
               className={isMobile ? "socialIcon" : "footer_link"}
               href="https://www.linkedin.com/in/ron-motola"

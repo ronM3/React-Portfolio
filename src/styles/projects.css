@@ -1,0 +1,129 @@
+.projects {
+  padding: 0 0 50px 0;
+  position: relative;
+  background: linear-gradient(
+    102.21deg,
+    rgb(57 41 81) 13.09%,
+    rgb(0 0 0 / 50%) 58.58%
+  );
+  border-bottom-right-radius: 64px;
+  z-index: 0;
+}
+
+.projects h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  padding: 21px;
+  font-family: "Poppins", sans-serif !important;
+  border-top-left-radius: 64px;
+  border-top: 6px solid #9450ff;
+}
+.projects p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  line-height: 1.5em;
+  margin: 14px auto 20px auto;
+  text-align: center;
+  width: 56%;
+}
+.project-p {
+  display: grid;
+}
+.project-loginInfo {
+  padding: 9px 62px 2px 0px;
+  color: lightgray;
+}
+.live_button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 23px;
+  letter-spacing: 0.8px;
+  position: relative;
+  padding: 0.8rem 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  z-index: 1;
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  align-items: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #bb99c0;
+  transition: ease-out 0.4s;
+}
+.live_button:hover {
+  box-shadow: inset 400px 0 0 0 #ffffff;
+  color: black;
+}
+a.live_button.s {
+  margin-left: 0.5rem;
+}
+.project-title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.2em;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  bottom: auto !important;
+  opacity: 0.8 !important;
+  top: auto !important;
+  width: 65% !important;
+  transition: ease-out 0.4s;
+}
+.carousel-control-prev-icon {
+  background-image: url("../assets/seta_prim3.png") !important;
+  width: 3rem !important;
+  height: 2.5rem !important;
+}
+.carousel-control-next-icon {
+  background-image: url("../assets/seta_prim4.png") !important;
+  width: 3rem !important;
+  height: 2.5rem !important;
+}
+.carousel-indicators {
+  margin-bottom: -1.8rem !important;
+  max-width: 100% !important;
+  z-index: 0 !important;
+}
+.carousel-indicators button {
+  background-color: #a15aff !important;
+}
+#carouselP a span {
+  transition: ease-out 0.4s;
+}
+
+#carouselP a span:hover {
+  transform: scale(1.3);
+}
+.carusel_item {
+  padding-bottom: 4rem;
+}
+/* media quries */
+@media only screen and (max-width: 768px) {
+  .project-text {
+    padding: 10px;
+  }
+  .carousel-indicators {
+    max-width: 35% !important;
+    margin-left: 32% !important;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 54% !important;
+  }
+  .projects {
+    background: linear-gradient(
+      94deg,
+      rgb(57 41 81) 32.09%,
+      rgb(0 0 0 / 50%) 87.58%
+    );
+  }
+  .projects p {
+    width: 92%;
+  }
+}

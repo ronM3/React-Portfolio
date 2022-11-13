@@ -4,19 +4,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/Rocket-Black5.webp";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { AnimationBackground } from "./feature/AnimationBackground";
+import '../styles/banner.css'
 
 export const Header = () => {
-  const [userEntered, setUserEntered] = useState(false);
-
-  useEffect(() => {
-    if (window.location.href === "/") {
-      setUserEntered(false);
-      console.log(userEntered);
-    } else {
-      setUserEntered(true);
-    }
-  }, [window.location.href]);
-
   return (
     <section className="banner" id="home">
       <Container>
@@ -42,7 +32,6 @@ export const Header = () => {
                   <a href="#contacts">
                   Let’s Connect <ArrowRightCircle size={25} />
                   </a>
-            
                 </button>
               </div>
             </div>

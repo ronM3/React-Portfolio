@@ -6,6 +6,7 @@ import { skillsData } from "../data/skillsData";
 import { SkillCard } from "./SkillCard";
 import Fade from "react-reveal/Fade";
 import { Tecks } from "./Tecks";
+import '../styles/skills.css'
 
 export const Skills = () => {
   const [scrolled, setScrolled] = useState(false);

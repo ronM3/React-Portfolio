@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import { Col } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import isEmail from "validator/lib/isEmail";
+import '../styles/contacts.css'
 
 const Contacts = () => {
   const [success, setSuccess] = useState(false);

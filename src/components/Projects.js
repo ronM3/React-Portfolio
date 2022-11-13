@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import { projects } from "../data/projectsData";
+import '../styles/projects.css'
 
 export const Projects = () => {
   return (
