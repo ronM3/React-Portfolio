@@ -131,8 +131,9 @@
   backdrop-filter: blur(31px) !important;
   font-size: 0.875rem;
   color: rgb(241 192 255);
+  animation-duration: 2.6s;
+  animation-name: fadeInReveal;
 }
-
 .form-message {
   height: 111px;
   box-sizing: border-box;
@@ -201,7 +202,7 @@
   }
 }
 @media only screen and (max-width: 463px) {
-    a.live_button.s {
-        margin-left: 0.4rem;
-    }
+  a.live_button.s {
+    margin-left: 0.4rem;
+  }
 }
