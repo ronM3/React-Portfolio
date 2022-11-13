@@ -48,11 +48,12 @@ export const ProjectCard = ({ project }) => {
                         <source src={image} type="video/webm" />
                       </video>
                     ) : (
-                      <LazyLoadImage fade
+                      <img
                         alt="First slide"
                         src={image}
                         height="100%"
                         className="d-block w-100"
+                        loading="lazy"
                       />
                     )}
                   </Carousel.Item>
