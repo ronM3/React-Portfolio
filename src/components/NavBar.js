@@ -2,8 +2,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "../styles/navbar.css";
 import logo3 from "../assets/logo10.svg";
+import { forwardRef } from "react";
 
-export const NavBar = () => {
+export const NavBar = forwardRef((props, refs) => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -21,9 +22,13 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const onUpdateActiveL = (value) => {
-    setActiveLink(value);
+  const scrollToSection = (targetRef) => {
+    setActiveLink(targetRef.current.id);
     setIsNavExpanded(false);
+    targetRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   return (
@@ -44,46 +49,42 @@ export const NavBar = () => {
         <ul className={isNavExpanded ? "nav-links open" : "nav-links"}>
           <li className={isNavExpanded ? "fadelinks" : ""}>
             <a
-              href="#home"
               className={
                 activeLink === "home"
                   ? "active navbar-link"
                   : "navbar-link nav-link-ltr"
               }
-              onClick={() => onUpdateActiveL("home")}
+              onClick={() => scrollToSection(refs.homeRef)}
             >
               Home
             </a>
           </li>
           <li className={isNavExpanded ? "fadelinks" : ""}>
             <a
-              href="#skills"
               className={
-                activeLink === "Skills" ? "active navbar-link" : "navbar-link"
+                activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveL("Skills")}
+              onClick={() => scrollToSection(refs.skillsRef)}
             >
               Skills
             </a>
           </li>
           <li className={isNavExpanded ? "fadelinks" : ""}>
             <a
-              href="#projects"
               className={
-                activeLink === "Projects" ? "active navbar-link" : "navbar-link"
+                activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveL("Projects")}
+              onClick={() => scrollToSection(refs.projectsRef)}
             >
               Projects
             </a>
           </li>
           <li className={isNavExpanded ? "fadelinks" : ""}>
             <a
-              href="#contacts"
               className={
-                activeLink === "Contact" ? "active navbar-link" : "navbar-link"
+                activeLink === "contacts" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveL("Contact")}
+              onClick={() => scrollToSection(refs.contactsRef)}
             >
               Contact
             </a>
@@ -92,4 +93,4 @@ export const NavBar = () => {
       </div>
     </nav>
   );
-};
+});

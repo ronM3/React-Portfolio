@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { forwardRef } from "react";
+
 import { Col, Container, Row } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import { projects } from "../data/projectsData";
 import '../styles/projects.css'
 
-export const Projects = () => {
+export const Projects = forwardRef((props, projectsSection) => {
+
   return (
-    <section className="projects" id="projects">
+    <section className="projects" id="projects" ref={projectsSection}>
       <Container>
         <Row className="align-items-center justify-content-center">
           <h2>Projects</h2>
@@ -26,4 +29,4 @@ export const Projects = () => {
       </Container>
     </section>
   );
-};
+});

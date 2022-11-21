@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { forwardRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -8,7 +9,7 @@ import Fade from "react-reveal/Fade";
 import { Tecks } from "./Tecks";
 import '../styles/skills.css'
 
-export const Skills = () => {
+export const Skills = forwardRef((props, skillsSection) => {
   const [scrolled, setScrolled] = useState(false);
 
   const responsive = {
@@ -44,7 +45,7 @@ export const Skills = () => {
   }, [scrolled]);
 
   return (
-    <section id="skills" className={scrolled ? "skills scrolled" : "skills"}>
+    <section id="skills" className={scrolled ? "skills scrolled" : "skills"} ref={skillsSection}>
       <Container style={{ overflow: "hidden" }}>
         <Tecks/>
         <Row className="align-items-center">
@@ -76,4 +77,4 @@ export const Skills = () => {
       </Container>
     </section>
   );
-};
+});

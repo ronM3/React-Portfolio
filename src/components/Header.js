@@ -4,10 +4,11 @@ import headerImg from "../assets/Rocket-Black5.webp";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { AnimationBackground } from "./feature/AnimationBackground";
 import '../styles/banner.css'
+import { forwardRef } from "react";
 
-export const Header = () => {
+export const Header = forwardRef((props, homeSection) => {
   return (
-    <section className="banner" id="home">
+    <section className="banner" id="home" ref={homeSection}>
       <Container>
         <AnimationBackground />
         <Row className="align-items-center">
@@ -42,4 +43,4 @@ export const Header = () => {
       </Container>
     </section>
   );
-};
+});
