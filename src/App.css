@@ -27,6 +27,7 @@ body {
 .logo {
   width: 100%;
   height: auto;
+  vertical-align: baseline;
 }
 
 .go_up_button {

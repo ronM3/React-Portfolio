@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "../styles/navbar.css";
-import logo3 from "../assets/logo10.svg";
+import logo3 from "../assets/logo8.png";
 import { forwardRef } from "react";
 
 export const NavBar = forwardRef((props, refs) => {
@@ -34,7 +34,7 @@ export const NavBar = forwardRef((props, refs) => {
   return (
     <nav className={scrolled ? "scrolled" : ""}>
       <div className="container">
-        <a href="#home" className="brand-name">
+        <a  className="brand-name">
           <img className="logo" src={logo3} alt="logo" />
         </a>
         <button
