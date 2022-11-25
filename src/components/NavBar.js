@@ -34,9 +34,18 @@ export const NavBar = forwardRef((props, refs) => {
   return (
     <nav className={scrolled ? "scrolled" : ""}>
       <div className="container">
-        <a  className="brand-name">
+        {/* <a  className="brand-name">
           <img className="logo" src={logo3} alt="logo" />
-        </a>
+        </a> */}
+        
+              <div class="logo-holder logo-5">
+                <a href="" className="header_link">
+                  <h3>Motola</h3>
+                  <p>Web Developer</p>
+                </a>
+              </div>
+          
+
         <button
           className="hamburger"
           onClick={() => {
