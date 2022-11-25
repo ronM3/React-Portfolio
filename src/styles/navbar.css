@@ -34,10 +34,10 @@ nav > .container {
 .logo-holder {
   text-align: center;
 }
-.header_link{
+.header_link {
   text-decoration: none;
 }
-.logo-5 h3 {
+.logo_container h3 {
   color: #fff;
   font-weight: 300;
   font-size: 40px;
@@ -45,9 +45,8 @@ nav > .container {
   font-family: "Bangers", cursive;
   letter-spacing: 5px;
   margin: 0px;
-  /* padding: 0px; */
 }
-.logo-5 p {
+.logo_container p {
   font-size: 14px;
   margin-left: 0;
   color: #fff;
@@ -57,9 +56,8 @@ nav > .container {
   font-family: "Mansalva", cursive;
   position: relative;
   margin: 0px;
-  /* padding: 0px; */
 }
-.logo-5 p:before {
+.logo_container p:before {
   position: absolute;
   content: "";
   width: 17px;
@@ -68,7 +66,7 @@ nav > .container {
   left: 0px;
   top: 5px;
 }
-.logo-5 p:after {
+.logo_container p:after {
   position: absolute;
   content: "";
   width: 17px;
@@ -77,23 +75,6 @@ nav > .container {
   right: 0px;
   top: 5px;
 }
-@media only screen and (max-width: 736px) {
-  /* .logo-container ul {
-    width: 100%;
-    text-align: center;
-  }
-  .logo-container ul li {
-    width: 290px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    float: none !important;
-  } */
-  .logo-5 h3{
-    font-size: 35px;
-  }
-}
-/*  */
 .hamburger {
   border: 0;
   height: 40px;
@@ -211,16 +192,10 @@ nav [aria-expanded="true"] .navbar-toggler-icon {
   nav.scrolled {
     height: 54px;
   }
-  /* nav > .container {
-    align-items: initial;
-  } */
-
-  .brand-name {
-    width: 24%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  .logo_container h3 {
+    font-size: 35px;
   }
+
   .hamburger {
     position: absolute;
     cursor: pointer;
