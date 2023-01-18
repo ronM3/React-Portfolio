@@ -5,6 +5,12 @@
   width: 320px;
   pointer-events: none;
   animation: rotate 5s linear infinite;
+  transition: all;
+}
+.contacts--img:hover{
+  /* background: url(../assets/footer-img2.png); */
+  background-color: red;
+  display: none;
 }
 .footer_contact_h {
   display: flex;
