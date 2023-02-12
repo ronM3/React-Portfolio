@@ -17,7 +17,7 @@ import weather_project from '../assets/weather-project.webm'
 export const projects = [
       {
         id: 1,
-        title: "Weatherwise - Forecast",
+        title: "Weatherwise Forecast",
         description:"Developed weather forecast app using HTML5 Geolocation, OpenWeatherMap,Weatherbit APIs and Vanilla-javascript, with a user-friendly UI, responsive design,dynamic background, 7-day forecast, and data caching for optimized performance.The project follows a Module Revealing Architecture pattern for clear code organization and modularity.",
         images: [`${weather_project}`],
         live: 'https://weatherwise.onrender.com/',
