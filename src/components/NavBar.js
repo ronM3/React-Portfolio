@@ -33,7 +33,7 @@ export const NavBar = forwardRef((props, refs) => {
   return (
     <nav className={scrolled ? "scrolled" : ""}>
       <div className="container">
-        <div class="logo-holder logo_container">
+        <div class="logo-holder px-2 pt-2 logo_container">
           <a href="" className="header_link">
             <h3>Motola</h3>
             <p>Web Developer</p>

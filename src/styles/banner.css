@@ -1,7 +1,8 @@
 .banner {
   margin-top: 0;
   height: 100vh;
-  padding: 260px 0 100px 0;
+  /* padding: 260px 0 100px 0; */
+  /* padding: 157px 0 100px 0; */
   background: url(../assets/banner-bg20.webp) repeat top center;
   background-position: top center;
   background-size: cover;
@@ -10,6 +11,12 @@
   position: relative;
   color: #fff;
   border-top: 0;
+}
+.banner > .container {
+  align-items: baseline;
+  flex-wrap: inherit;
+  justify-content: space-between;
+  padding-top: 30vh;
 }
 .main-text {
   max-width: 617px;
@@ -125,6 +132,10 @@
   .connect-box {
     text-align: center;
   }
+  .banner > .container {
+    align-items: baseline;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    padding-top: 0;
+  }
 }
-
-
