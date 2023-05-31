@@ -17,13 +17,14 @@ export const ProjectCard = ({ project }) => {
               <div className="project-p">
                 <h3 className="project-title">{project.title}</h3>
                 <span>{project.description}</span>
-                <span className="project-loginInfo">{project.user}</span>
+                {project.user && (<span className="project-loginInfo">{project.user}</span>)}
               </div>
-              {project.live && (
-                <a className="live_button" href={project.live}>
+              {project.live ? <a className="live_button" href={project.live}>
                   Visit Live
-                </a>
-              )}
+                </a> : 
+                <a className="live_button delete">
+                  Visit Live
+                </a>}
               <a className="live_button s" href={project.repository}>
                 Source Code
               </a>
@@ -43,7 +44,7 @@ export const ProjectCard = ({ project }) => {
                 return (
                   <Carousel.Item key={index}>
                     {image.includes('webm') ? (
-                      <video  width="100%" autoPlay={true} muted={true} loop={true}>
+                      <video width="100%" autoPlay={true} muted={true} loop={true}>
                         <source src={image} type="video/webm" />
                       </video>
                     ) : (

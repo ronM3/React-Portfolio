@@ -1,8 +1,5 @@
 .banner {
-  margin-top: 0;
   height: 100vh;
-  /* padding: 260px 0 100px 0; */
-  /* padding: 157px 0 100px 0; */
   background: url(../assets/banner-bg20.webp) repeat top center;
   background-position: top center;
   background-size: cover;
@@ -10,9 +7,8 @@
   z-index: 0;
   position: relative;
   color: #fff;
-  border-top: 0;
 }
-.banner > .container {
+.banner > .container {   
   align-items: baseline;
   flex-wrap: inherit;
   justify-content: space-between;

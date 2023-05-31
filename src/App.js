@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <NavBar ref={refs}/>
       <ScrollTopButton />
-      <Header ref = { homeRef }/>
+      <Header ref={homeRef}/>
       <Skills ref={skillsRef}/>
       <Projects ref={projectsRef} />
       <Footer ref={contactsRef}/>

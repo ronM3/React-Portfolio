@@ -45,7 +45,7 @@ export const Skills = forwardRef((props, skillsSection) => {
   }, [scrolled]);
 
   return (
-    <section id="skills" className={scrolled ? "skills scrolled" : "skills"} ref={skillsSection}>
+    <section id="skills" className='skills' ref={skillsSection}>
       <Container style={{ overflow: "hidden" }}>
         <Tecks/>
         <Row className="align-items-center">
